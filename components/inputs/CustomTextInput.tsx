@@ -1,15 +1,16 @@
 import React from 'react';
 
-import {Text, View, StyleSheet, TextInput, TextInputProps} from 'react-native';
+import {StyleProp, StyleSheet, TextInput, TextInputProps, TextStyle} from 'react-native';
 
 interface InputWithPlaceholderProps extends TextInputProps {
     placeholder: string;
+    style?: StyleProp<TextStyle>
 }
 
-const CustomTextInput:React.FC<InputWithPlaceholderProps> = ({ placeholder, ...props }) => {
+const CustomTextInput:React.FC<InputWithPlaceholderProps> = ({ placeholder, style={}, ...props }) => {
     return (
         <TextInput
-            style={styles.input}
+            style={[styles.input, style]}
             placeholder={placeholder}
             placeholderTextColor="#999"
             {...props}

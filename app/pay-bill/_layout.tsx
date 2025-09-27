@@ -3,7 +3,7 @@ import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {Stack} from "expo-router";
 
-const MenuLayout = () => {
+const PayBillLayout = () => {
     return (
         <Stack
             screenOptions={{
@@ -12,13 +12,12 @@ const MenuLayout = () => {
                 contentStyle: { backgroundColor: '#fff' },
             }}
         >
-            <Stack.Screen name="complaint" />
-            <Stack.Screen name="contact" />
-            <Stack.Screen name="settings" />
-            <Stack.Screen name="edit-profile" />
+            <Stack.Screen name="index" />
+            <Stack.Screen name="confirmation" />
+            <Stack.Screen name="success" />
         </Stack>
     );
 };
 
-export default MenuLayout;
+export default PayBillLayout;
 const styles = StyleSheet.create({});

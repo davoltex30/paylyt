@@ -29,6 +29,10 @@ export default function RootLayout() {
                             <Stack.Screen name="onboarding" options={{headerShown: false}}/>
                             <Stack.Screen name="(auth)" options={{headerShown: false}}/>
                             <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                            <Stack.Screen name="Notification" options={{headerShown: false}}/>
+                            <Stack.Screen name="pay-bill" options={{headerShown: false}}/>
+                            <Stack.Screen name="card-settings" options={{headerShown: false}}/>
+                            <Stack.Screen name="change-pin" options={{headerShown: false}}/>
                             <Stack.Screen name="(menu)" options={{headerShown: false}}/>
                             <Stack.Screen name="+not-found"/>
                         </Stack>

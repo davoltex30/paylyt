@@ -22,7 +22,7 @@ const Contact = () => {
                 <TouchableOpacity onPress={() => router.back()}>
                     <Avatar.Icon icon={"chevron-left"} size={30} style={{backgroundColor: '#d3d3d3'}}/>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => router.back()} style={{position: 'relative',}}>
+                <TouchableOpacity onPress={() => router.back()}>
                     <Avatar.Icon icon={"bell"} size={30} style={{backgroundColor: '#d3d3d3'}}/>
                 </TouchableOpacity>
                 <ThemedText style={styles.headerText}>Contact</ThemedText>

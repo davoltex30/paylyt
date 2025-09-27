@@ -52,15 +52,21 @@ const DashboardMenuModal = forwardRef<DashboardMenuModalHandle>((props, ref) => 
                 backdropComponent={renderBackdrop}
             >
                 <BottomSheetView>
-                    <TouchableOpacity style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
+                    <TouchableOpacity
+                        onPress={() => router.navigate("/(menu)/profile")}
+                        style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
                         <ThemedText>Manage Profile</ThemedText>
                         <Entypo name={"chevron-small-right"} color={"#808080"} size={24}/>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
+                    <TouchableOpacity
+                        onPress={() => router.navigate("/(menu)/complaint")}
+                        style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
                         <ThemedText>Submit Complains</ThemedText>
                         <Entypo name={"chevron-small-right"} color={"#808080"} size={24}/>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
+                    <TouchableOpacity
+                        onPress={() => router.navigate("/(menu)/settings")}
+                        style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 15}}>
                         <ThemedText>Settings</ThemedText>
                         <Entypo name={"chevron-small-right"} color={"#808080"} size={24}/>
                     </TouchableOpacity>
